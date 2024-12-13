@@ -11,14 +11,23 @@
     & input {
         box-sizing: border-box;
         width: 100%;
+        display: block;
         padding: 1.2rem 2rem;
         margin: 0.8rem 0;
         border-radius: 2rem;
         border-style: none;
+        background-image: url('/images/star.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        padding-left: 4rem;
+        color: $color-secondary;
+        //transition: width 0.4s ease-in-out;
 
         &:focus {
             outline: none;
             border: 2px solid $color-complementary;
+            //width: 100%;
         }
     }
 }
