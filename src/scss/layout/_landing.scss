@@ -1,6 +1,7 @@
 .landing{
   height: 80vh;
-  background-color: $color-main;
+  background: linear-gradient($color-complementary, $color-main);
+  padding: 20px 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,21 +10,30 @@
 
   &_desc{
     width: 100%;
+    height: 20vh;
     background-color: red;
   }
 
   &_title{
     font-family: $font-main;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
     & h1{
       color: white;
-      font-size: 36px;
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
     }
 
     & h2{
       color: $color-secondary;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: bold;
+      line-height: 25px;
+      text-align: center;
     }
   }
 
