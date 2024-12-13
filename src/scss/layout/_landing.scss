@@ -41,11 +41,13 @@
 
 
     & a{
-      font-family: $font-main;
-      font-size: 18px;
       color: white;
-      text-transform: uppercase;
+      font-family: $font-main;
+      font-size: 16px;
       font-style: italic;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
       border: 5px solid rgba($color: white, $alpha: 0.6);
       border-radius: 3px;
       padding: 15px 25px;
