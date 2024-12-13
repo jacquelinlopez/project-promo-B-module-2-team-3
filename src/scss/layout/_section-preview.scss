@@ -1,0 +1,36 @@
+.section_preview{
+    font-family: $font-main;
+    /*display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    /*modificar a 'align-items: center' cuando toque*/
+    &-card{
+        width: 80%;
+        background-image:  
+        linear-gradient(
+            166deg, 
+            rgba(163,255,243,1) 0%, 
+            rgba(45,211,190,1) 47%, 
+            rgba(3,150,133,1) 72%, 
+            rgba(139,49,152,1) 98%);        ;
+        border: 1px solid black;
+        border-radius: 5%;
+        padding: 35px 30px 45px 30px;
+    }
+}
+.preview_card-img{
+    border-radius: 50%;
+    width: 100%;
+}
+.preview_card-title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.preview_card-paragraph{
+    padding: 10px 0px;
+    font-size: 1.4rem;
+}
+
