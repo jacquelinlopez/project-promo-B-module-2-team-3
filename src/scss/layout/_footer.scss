@@ -1,8 +1,25 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  background-color: $color-secondary;
+  color: white;
+  font-family: $font-main;
+
+  // @media
+}
+ 
+.text-footer{
+  margin-top: 15px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+
+  //media
+}
+
+.footer-copy{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+
+  //media
 }
