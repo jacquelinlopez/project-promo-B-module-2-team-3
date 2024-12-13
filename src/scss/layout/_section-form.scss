@@ -1,0 +1,24 @@
+.section-form {
+    padding: 3.5rem;
+    background-color: $color-main;
+}
+
+.create-form {
+    
+    font-family: $font-main;
+    font-size: 1.5rem;
+
+    & input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1.2rem 2rem;
+        margin: 0.8rem 0;
+        border-radius: 2rem;
+        border-style: none;
+
+        &:focus {
+            outline: none;
+            border: 2px solid $color-complementary;
+        }
+    }
+}
