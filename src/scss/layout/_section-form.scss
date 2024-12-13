@@ -1,0 +1,79 @@
+.section-form {
+    padding: 3.5rem;
+    background-color: $color-main;
+}
+
+.create-form {
+    
+    font-family: $font-main;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    &_legend {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        padding: 0.5rem 2rem;
+    }
+
+    &_option-select {
+        width: 100%;
+        padding: 1.2rem 2rem;
+        border: none;
+        border-radius: 2rem;
+        display: block;
+        margin: 0.8rem 0;
+        font-family: $font-main;
+        background-image: url('/images/star.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        padding-left: 4rem;
+
+        &:focus {
+            outline: none;
+            border: 2px solid $color-complementary;
+            //width: 100%;
+        }
+        
+
+    }
+
+    & input {
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        padding: 1.2rem 2rem;
+        margin: 0.8rem 0;
+        border-radius: 2rem;
+        border-style: none;
+        font-family: $font-main;
+        background-image: url('/images/star.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        padding-left: 4rem;
+        color: $color-secondary;
+        //transition: width 0.4s ease-in-out;
+
+        &:focus {
+            outline: none;
+            border: 2px solid $color-complementary;
+            //width: 100%;
+        }
+    }
+
+    &_reset-btn {
+        background-color: $color-secondary;
+        border: none;
+        color: white;
+        font-family: $font-main;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 1.6rem 3.2rem;
+        margin: 2rem 10%;
+        cursor: pointer;
+        width: 80%;
+    }
+}
