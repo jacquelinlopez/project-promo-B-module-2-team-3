@@ -1,5 +1,50 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.menu{
+  display:none;
+
+
+
+  //aca va el @media 
 }
+.menu li{
+  text-decoration: none;
+  list-style:none;
+  color: white;
+}
+
+
+
+
+
+.header {
+  background-color: $color-complementary ;
+  font-family: $font-main ;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+
+ .logo-adalaber{
+  width: 25px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  //aca va el @media
+ }
+
+ .menu-hamburger{
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: flex-end;
+
+  //media
+ }
+
+ .icon-hamburger{
+  width: auto;
+  height: 25px;
+ }
