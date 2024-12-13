@@ -1,0 +1,40 @@
+.landing{
+  height: 80vh;
+  background-color: $color-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &_desc{
+    width: 100%;
+    background-color: red;
+  }
+
+  &_title{
+    font-family: $font-main;
+   
+    & h1{
+      color: white;
+      font-size: 36px;
+    }
+
+    & h2{
+      color: $color-secondary;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  &_button a{
+    font-family: $font-main;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid rgba($color: white, $alpha: 0.5);
+    padding: 15px 25px;
+    background-color: $color-complementary;
+  }
+}
+
