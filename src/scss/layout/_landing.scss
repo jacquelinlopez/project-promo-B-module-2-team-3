@@ -6,10 +6,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 3rem;
+
   &_desc{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     background-color: red;
   }
 
@@ -18,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 
     & h1{
       color: white;
@@ -35,15 +36,25 @@
       text-align: center;
     }
   }
+  &_button{
+    margin-top: 3rem;
 
-  &_button a{
-    font-family: $font-main;
-    font-size: 18px;
-    color: white;
-    text-transform: uppercase;
-    border: 2px solid rgba($color: white, $alpha: 0.5);
-    padding: 15px 25px;
-    background-color: $color-complementary;
+
+    & a{
+      font-family: $font-main;
+      font-size: 18px;
+      color: white;
+      text-transform: uppercase;
+      font-style: italic;
+      border: 5px solid rgba($color: white, $alpha: 0.6);
+      border-radius: 3px;
+      padding: 15px 25px;
+      background-color: $color-complementary;
+
+      &:hover{
+        border: 5px solid rgba($color: $color-secondary, $alpha: 0.7);
+      }
+    }
   }
 }
 
