@@ -6,7 +6,16 @@
 .create-form {
     
     font-family: $font-main;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    &_legend {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        padding: 0.5rem 2rem;
+    }
 
     &_option-select {
         width: 100%;
@@ -53,5 +62,18 @@
             border: 2px solid $color-complementary;
             //width: 100%;
         }
+    }
+
+    &_reset-btn {
+        background-color: $color-secondary;
+        border: none;
+        color: white;
+        font-family: $font-main;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 1.6rem 3.2rem;
+        margin: 2rem 10%;
+        cursor: pointer;
+        width: 80%;
     }
 }
