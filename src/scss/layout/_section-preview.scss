@@ -17,6 +17,13 @@
         border-radius: 5%;
         padding: 35px 30px 45px 30px;
     }
+
+    @media (min-width : 768px) {
+        width: 50%;
+    }
+    @media (min-width : 1200px) {
+        width: 60%;
+    }
 }
 .preview_card-img{
     border-radius: 50%;
