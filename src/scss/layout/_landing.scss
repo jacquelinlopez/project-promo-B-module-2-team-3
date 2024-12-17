@@ -28,6 +28,11 @@
 
       @media (min-width:768px){
         font-size: 40px;
+        line-height: 50px;
+      }
+      @media (min-width:1200px){
+        font-size: 60px;
+        line-height: 70px;
       }
     }
 
@@ -40,11 +45,21 @@
 
       @media (min-width:768px){
         font-size: 20px;
+        line-height: 40px;
+      }
+      @media (min-width:1200px){
+        font-size: 25px;
+        line-height: 60px;
       }
     }
   }
   &_button{
     margin-top: 3rem;
+
+    @media (min-width:1200px){
+      margin-top: 6rem;
+    }
+
 
 
     & a{
