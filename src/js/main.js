@@ -22,11 +22,11 @@ const previewCode = document.querySelector('.js-preview-code');
 function render(){
     //color
     //img
-    previewTitle.innerHTML += cardData.field3;
-    previewTutoring.innerHTML += cardData.field1;
-    previewQueen.innerHTML += cardData.field4;
-    previewDiscover.innerHTML += cardData.field5;
-    previewCode.innerHTML += cardData.field6;
+    previewTitle.innerHTML = cardData.field3;
+    previewTutoring.innerHTML = cardData.field1;
+    previewQueen.innerHTML = cardData.field4;
+    previewDiscover.innerHTML = cardData.field5;
+    previewCode.innerHTML = cardData.field6;
 }
 
 function handleForm(ev){
