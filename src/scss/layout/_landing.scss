@@ -25,6 +25,10 @@
       font-size: 30px;
       line-height: 40px;
       text-align: center;
+
+      @media (min-width:768px){
+        font-size: 40px;
+      }
     }
 
     & h2{
@@ -33,6 +37,10 @@
       font-weight: bold;
       line-height: 25px;
       text-align: center;
+
+      @media (min-width:768px){
+        font-size: 20px;
+      }
     }
   }
   &_button{
@@ -53,7 +61,7 @@
       background-color: $color-complementary;
 
       &:hover{
-        border: 5px solid rgba($color: $color-secondary, $alpha: 0.7);
+        border: 5px solid rgba($color: $color-secondary, $alpha: 0.6);
       }
     }
   }
