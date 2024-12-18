@@ -9,7 +9,7 @@ const cardData = {
     field4: "",//reina
     field5: "",//curiosidad
     field6: "",//código
-    //field7: "",
+    field7: "", //font
     photo: "" //foto
 };
 
