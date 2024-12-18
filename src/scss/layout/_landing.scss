@@ -1,3 +1,8 @@
+
+.hidden{
+  display: none;
+}
+
 .landing{
   height: 100vh;
   background: linear-gradient($color-complementary, $color-main);
@@ -6,25 +11,29 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
-  &_desc{
-    width: 100%;
-    height: 20vh;
-    background-color: red;
-  }
+  gap: 3rem;
 
   &_title{
     font-family: $font-main;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 
     & h1{
       color: white;
       font-size: 30px;
       line-height: 40px;
       text-align: center;
+
+      @media (min-width:768px){
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @media (min-width:1200px){
+        font-size: 60px;
+        line-height: 70px;
+      }
     }
 
     & h2{
@@ -33,17 +42,41 @@
       font-weight: bold;
       line-height: 25px;
       text-align: center;
+
+      @media (min-width:768px){
+        font-size: 20px;
+        line-height: 40px;
+      }
+      @media (min-width:1200px){
+        font-size: 25px;
+        line-height: 60px;
+      }
     }
   }
+  &_button{
+    margin-top: 3rem;
 
-  &_button a{
-    font-family: $font-main;
-    font-size: 18px;
-    color: white;
-    text-transform: uppercase;
-    border: 2px solid rgba($color: white, $alpha: 0.5);
-    padding: 15px 25px;
-    background-color: $color-complementary;
+    @media (min-width:1200px){
+      margin-top: 6rem;
+    }
+
+    & a{
+      color: white;
+      font-family: $font-main;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 5px solid rgba($color: white, $alpha: 0.6);
+      border-radius: 3px;
+      padding: 15px 25px;
+      background-color: $color-complementary;
+
+      &:hover{
+        border: 5px solid rgba($color: $color-secondary, $alpha: 0.6);
+      }
+    }
   }
 }
 
