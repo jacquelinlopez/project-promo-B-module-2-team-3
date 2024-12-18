@@ -1,21 +1,25 @@
 .section_preview{
     font-family: $font-main;
-    /*display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
-    /*modificar a 'align-items: center' cuando toque*/
+    margin-top: 15px;
     &-card{
-        width: 80%;
-        background-image:  
-        linear-gradient(
-            166deg, 
-            rgba(163,255,243,1) 0%, 
-            rgba(45,211,190,1) 47%, 
-            rgba(3,150,133,1) 72%, 
-            rgba(139,49,152,1) 98%);        ;
-        border: 1px solid black;
-        border-radius: 5%;
-        padding: 35px 30px 45px 30px;
+        margin: auto;
+        width: 300px;
+        // background: linear-gradient(to bottom left, #f12711, #f5af19);
+        // border: 5px solid #f16711;
+        //OPCION 2
+        // background: linear-gradient(to bottom left, #7F00FF, #E100FF);
+        // border: 5px solid #8b1db5;
+        //OPCION 3
+        background: linear-gradient(to bottom left, #8B3198, #dea2fd);
+        border: 5px solid #9042cc;
+        //OPCION 4
+        // background: linear-gradient(to bottom left, #039685, #30D8C3);
+        // border: 5px solid #28a187;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 
+            rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
     @media (min-width : 768px) {
@@ -25,19 +29,30 @@
         width: 60%;
     }
 }
-.preview_card-img{
-    border-radius: 50%;
-    width: 100%;
-}
-.preview_card-title{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px 0px;
+.preview_card{
+    &-img{
+        border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+        width: 100%;}
+    &-title{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    &-paragraph{
+        padding: 10px 0px;
+        font-size: 1.4rem; 
+    }
 }
 
-.preview_card-paragraph{
-    padding: 10px 0px;
+.card_code{
+    font-family: $font-main;
     font-size: 1.4rem;
+    border-radius: 100px;
+    border: none;
+    padding: 5px 30px;
+    background-color: white;
+    color: #000;
+    margin-bottom: 15px;
+    transform: translateX(85px);
 }
-
