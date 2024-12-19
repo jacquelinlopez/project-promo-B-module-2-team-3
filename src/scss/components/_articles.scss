@@ -1,7 +1,35 @@
-article {
-    //text-align: center;
+article:hover .circleTitle {
+    color: $color-secondary;
+    transition: color 0.8s ease;
+}
 
-    & img{
-        width: 200px;
+article img{
+    width: 200px;
+
+    @media (min-width:768px){
+        width: 180px;
+    }
+}
+
+
+.articleDisplay{
+    display: none;
+
+    @media (min-width:768px){
+        display: block;
+    }
+}
+      
+
+.circleTitle{
+    display: none;
+
+    @media (min-width:768px){
+        display: block;
+        color: white;
+        font-family: $font-main;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
     }
 }
