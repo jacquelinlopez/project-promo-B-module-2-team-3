@@ -27,10 +27,13 @@
 /*estilo para el menu hamburguesa*/
 .menu-hamburger {
   display: flex;
+  margin-top: 10px;
   margin-right: 10px;
   align-items: center;
   justify-content: flex-end;
 }
+
+
 
 .icon-hamburger{
   width: auto;
@@ -74,8 +77,16 @@
     letter-spacing: 1px;
     cursor: pointer;
 }
+.menu li a{
+  text-decoration: none;
+  color: white;
+}
 .menu-hamburger {
   display: none; 
+}
+
+.menu li a:hover {
+  text-decoration: underline;
 }
 
   }
