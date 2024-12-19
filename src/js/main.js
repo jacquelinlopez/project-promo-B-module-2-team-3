@@ -1,6 +1,7 @@
 'use strict';
 
 import './1_color_themes.js';
+import './2_landing.js';
 
 const cardData = {
     field1: 0, //tutoria
