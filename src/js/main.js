@@ -2,6 +2,7 @@
 
 import './1_color_themes.js';
 import './2_landing.js';
+import './3_font_style.js';
 
 const cardData = {
     field1: 0, //tutoria
@@ -10,7 +11,7 @@ const cardData = {
     field4: "",//reina
     field5: "",//curiosidad
     field6: "",//código
-    //field7: "",
+    field7: "", //font
     photo: "" //foto
 };
 

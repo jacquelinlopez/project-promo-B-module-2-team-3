@@ -2,37 +2,51 @@
     <form action="" class="create-form js-form">
         <fieldset>
             <legend class="create-form_legend">Diseña</legend>
-            <label for="">color</label>
-                <select name="" id="color-option" class="create-form_option-select js-colorOp">
+
+            <label for="">foto</label>
+                <input type="file">
+
+            <label for="color-option">color</label>
+                <select name="color-option" id="field2" class="create-form_option-select js-colorOp">
+                    <option value="color-default">Elije un color de fondo</option>
                     <option value="option1">option 1</option>
                     <option value="option2">option 2</option>
                     <option value="option3">option 3</option>
                 </select>
-            <label for="">foto</label>
-                <input type="file">
+            
+                <label for="font-option">Font Style</label>
+                <select name="font-option" id="field7" class="create-form_option-select js-fontOp">
+                    <option value="font-default">Elije un estilo de texto</option>
+                    <option value="option1">option 1</option>
+                    <option value="option2">option 2</option>
+                    <option value="option3">option 3</option>
+                </select>
+            
         </fieldset>
 
         <fieldset>
             <legend class="create-form_legend">Rellena</legend>
-            <label for="">Nombre</label>
-                <input type="text" placeholder="Ms.Adalaber" id="field3">
-            <label for="">Tutorias solicitadas</label>
-                <input type="number" placeholder="1,000,000" id="field1">
-            <label for="">La reina de ...</label>
-                <input type="text" placeholder="algo que te sale muy bien">
-            <label for="" >Ha descubierto que ...</label>
-                <input type="text" placeholder="una curiosidad">
-            <label for="">Si fuera codigo seria ...</label>
-                <input type="text" placeholder="una codigo que te represente">
+            <label for="name">Nombre</label>
+                <input type="text" placeholder="Ms.Adalaber" id="field3" name="name" class="create-form_input"/>
+            <label for="tutoring-session">Tutorias solicitadas</label>
+                <input type="number" placeholder="1,000,000" id="field1" name="tutoring-session" class="create-form_input"/>
+            <label for="queen-of">La reina de ...</label>
+                <input type="text" placeholder="algo que te sale muy bien" id="field4" name="queen-of" class="create-form_input"/>
+            <label for="curiosity" >Ha descubierto que ...</label>
+                <input type="text" placeholder="una curiosidad" id="field5" name="curiosity" class="create-form_input"/>
+            <label for="code">Si fuera codigo seria ...</label>
+                <input type="text" placeholder="una codigo que te represente" id="field6" name="code" class="create-form_input"/>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="create-form_buttons">
             <legend class="create-form_legend">Crea</legend>
+
             <div class="create-form_create-btn">
-                <a href="#">Crea</a>
+                <a href="#">Genera tu tarjeta </a>
             </div>
+
+            <input type="reset" value="Empieza de nuevo" class="create-form_reset-input"/>
             
-            <button class="create-form_reset-btn">Empieza de nuevo</button>
         
         </fieldset>
     </form>
