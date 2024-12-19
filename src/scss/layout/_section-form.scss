@@ -49,7 +49,7 @@
 
     }
 
-    & input {
+    &_input {
         box-sizing: border-box;
         width: 100%;
         display: block;
@@ -71,22 +71,6 @@
             border: 2px solid $color-complementary;
             //width: 100%;
         }
-    }
-
-    &_reset-btn {
-        width: 80%;
-        background-color: $color-complementary;
-        border: none;
-        border-radius: 2.5rem;
-        color: white;
-        font-family: $font-main;
-        font-size: 1.6rem;
-        font-weight: bold;
-        padding: 1.6rem 3.2rem;
-        margin: 1rem 10%;
-        cursor: pointer;
-        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
-        
     }
 
     &_reset-input {
