@@ -1,10 +1,8 @@
 
-.hidden{
-  display: none;
-}
+
 
 .landing{
-  height: 100vh;
+  height: 83vh;
   background: linear-gradient($color-complementary, $color-main);
   padding: 20px 35px;
   display: flex;
@@ -12,6 +10,20 @@
   align-items: center;
   flex-direction: column;
   gap: 3rem;
+
+  &_desc{
+    @media (min-width:768px){
+      display: flex;
+      flex-direction: row;
+  
+    }
+
+    &-circle{
+      @media (min-width:768px){
+        display: none;
+    }
+  }
+}
 
   &_title{
     font-family: $font-main;
@@ -53,6 +65,7 @@
       }
     }
   }
+
   &_button{
     margin-top: 3rem;
 
@@ -74,9 +87,16 @@
       background-color: $color-complementary;
 
       &:hover{
-        border: 5px solid rgba($color: $color-secondary, $alpha: 0.6);
+        border: 5px solid rgba(white, $alpha: 1);
       }
     }
   }
 }
 
+
+.articleDisplay{
+  display: none;
+  @media (min-width:768px){
+    display: block;
+  }
+}
