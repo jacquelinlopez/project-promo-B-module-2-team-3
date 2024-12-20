@@ -48,6 +48,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+    &.collapsed{
+      display: block;
+    }
 }
 
 .menu li {
@@ -72,6 +76,7 @@
     margin: 0;
   }
   .menu li {
+    display: inline;
     font-size: 20px;
     text-align: right;
     letter-spacing: 1px;
