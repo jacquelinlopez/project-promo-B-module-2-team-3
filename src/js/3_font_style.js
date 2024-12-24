@@ -2,12 +2,25 @@
 
 const fontOption = document.querySelector('.js-fontOp');
 const cardFont = document.querySelector('.js-card-font');
+const cardTutoring = document.querySelector('.js-card-font-item1');
+const cardQueen = document.querySelector('.js-card-font-item2');
+const cardDiscover= document.querySelector('.js-card-font-item3');
+const cardCode = document.querySelector('.js-card-font-item4');
+
 
 function handleInputFont () {
 
     if(fontOption.value === 'option1') {
     cardFont.classList.add('fontOp1');
     cardFont.classList.remove('fontOp0', 'fontOp2', 'fontOp3');
+    cardTutoring.classList.add('fontOp1');
+    cardTutoring.classList.remove('fontOp0', 'fontOp2', 'fontOp3');
+    cardQueen.classList.add('fontOp1');
+    cardQueen.classList.remove('fontOp0', 'fontOp2', 'fontOp3');
+    cardDiscover.classList.add('fontOp1');
+    cardDiscover.classList.remove('fontOp0', 'fontOp2', 'fontOp3');
+    cardCode.classList.add('fontOp1');
+    cardCode.classList.remove('fontOp0', 'fontOp2', 'fontOp3');
     }
 
     else if(fontOption.value === 'option2') {
