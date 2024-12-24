@@ -27,6 +27,7 @@ function handleInputFont () {
     
 }
 
+// Run the function on page load to ensure that the class fontOp0 is applied by default.
 document.addEventListener('DOMContentLoaded', () => {
     handleInputFont();
 });
