@@ -44,14 +44,16 @@
 
 /*ocultar el menu completo*/
 .menu{
-  display:none;
+  display:block;
   list-style: none;
   margin: 0;
   padding: 0;
 
-    &.collapsed{
-      display: block;
-    }
+    
+}
+
+ .collapsed{
+  display: none;
 }
 
 .menu li {
