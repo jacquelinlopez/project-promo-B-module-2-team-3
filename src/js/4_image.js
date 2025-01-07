@@ -2,8 +2,7 @@
 
 const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
-const profileImage = document.querySelector('.js__profile-image');
-const profilePreview = document.querySelector('.js__profile-preview');
+const profilePreview = document.querySelector('.js-preview-img');
 
 
 /**
@@ -31,8 +30,8 @@ function writeImage() {
    * podemos pasarlo como background a la imagen de perfil y a la vista previa
    * de nuestro componente.
    */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  profilePreview.src=fr.result;
+    cardData.photo = fr.result;
 }
 
 
