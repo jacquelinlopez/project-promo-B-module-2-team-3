@@ -25,6 +25,7 @@
         font-weight: bold;
         color: white;
         padding: 0.5rem 2rem;
+        cursor: pointer;
     }
 
     &_option-select {
@@ -136,4 +137,10 @@
         }
 
     }
+}
+.collapsed{
+    display: none;
+}
+.arrow{
+    width: 1.5rem;
 }

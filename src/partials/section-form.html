@@ -1,8 +1,8 @@
 <section class="section-form">
     <form action="" class="create-form js-form">
-        <fieldset>
-            <legend class="create-form_legend">Diseña</legend>
-
+        <h3 class="create-form_legend js-design-collapse">Diseña <span class=" arrow js-arrow1">⩔</span></h3>
+        <fieldset class="js-fieldset-design">
+            <!-- <legend class="create-form_legend">Diseña</legend> -->
             <label for="">foto</label>
                 <input type="file" class="js__profile-upload-btn" id="photo">
 
@@ -24,9 +24,9 @@
                 </select>
             
         </fieldset>
-
-        <fieldset>
-            <legend class="create-form_legend">Rellena</legend>
+        <h3 class="create-form_legend js-fill-collapse">Rellena <span class="arrow js-arrow2">⩔</span></h3>
+        <fieldset class="js-fieldset-fill">
+            <!-- <legend class="create-form_legend">Rellena</legend> -->
             <label for="name">Nombre</label>
                 <input type="text" placeholder="Ms.Adalaber" id="field3" name="name" class="create-form_input"/>
             <label for="tutoring-session">Tutorías solicitadas</label>
@@ -38,9 +38,9 @@
             <label for="code">Si fuera código sería ...</label>
                 <input type="text" placeholder="una codigo que te represente" id="field6" name="code" class="create-form_input"/>
         </fieldset>
-
-        <fieldset class="create-form_buttons">
-            <legend class="create-form_legend">Crea</legend>
+        <h3 class="create-form_legend js-create-collapse">Crea <span class="arrow js-arrow3">⩔</span></h3>
+        <fieldset class="create-form_buttons js-fieldset-create">
+            <!-- <legend class="create-form_legend">Crea</legend> -->
 
             <div class="create-form_create-btn">
                 <a href="#">Genera tu tarjeta </a>
