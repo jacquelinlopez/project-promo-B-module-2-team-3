@@ -23,6 +23,7 @@ const previewTutoring = document.querySelector('.js-preview-tutoring');
 const previewQueen = document.querySelector('.js-preview-queen');
 const previewDiscover = document.querySelector('.js-preview-discover');
 const previewCode = document.querySelector('.js-preview-code');
+const resetButton = document.querySelector('.js-reset');
 
 function render(){
     //color
@@ -45,3 +46,10 @@ function handleForm(ev){
 form.addEventListener('input', handleForm);
 
 
+function handleClick (){
+    previewImg.src = `https://img.freepik.com/vector-gratis/linda-chica-hacker-operando-laptop-dibujos-animados-vector-icono-ilustracion-personas-tecnologia-aislada-plana_138676-9487.jpg`;
+    previewTitle.innerHTML = ``;
+    previewTutoring
+}
+
+resetButton.addEventListener('click', handleClick)
