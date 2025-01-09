@@ -137,3 +137,32 @@
 
     }
 }
+
+.Img-upload-input {
+    display: none;
+}
+
+.Img-upload-label {
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    padding: 1.2rem 2rem;
+    margin: 0.8rem 0;
+    border-radius: 2rem;
+    border-style: none;
+    font-family: $font-main;
+    background-image: url('/images/star.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    padding-left: 4rem;
+    font-size: 1.4rem;
+    //transition: width 0.4s ease-in-out;
+
+    &:focus {
+        outline: none;
+        border: 2px solid $color-complementary;
+        //width: 100%;
+    }
+}
