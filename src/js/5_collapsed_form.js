@@ -10,23 +10,26 @@ const fieldsetFill = document.querySelector(".js-fieldset-fill");
 const fieldsetCreate = document.querySelector(".js-fieldset-create");
 
 function changeArrow(fieldset, span) {
-    if (fieldset.classList.contains("collapsed")) {
+    if (fieldset.classList.contains("collapsed-form")) {
         span.innerHTML = "⪢";
     } else {
         span.innerHTML = "⩔";
     }
 }
 
-function handleClickDesign() {
-    fieldsetDesign.classList.toggle("collapsed");
+function handleClickDesign(ev) {
+    ev.preventDefault();
+    fieldsetDesign.classList.toggle(".collapsed-form");
     changeArrow(fieldsetDesign, span1);
 }
-function handleClickFill() {
-    fieldsetFill.classList.toggle("collapsed");
+function handleClickFill(ev) {
+    ev.preventDefault();
+    fieldsetFill.classList.toggle(".collapsed-form");
     changeArrow(fieldsetFill, span2);
 }
-function handleClickCreate() {
-    fieldsetCreate.classList.toggle("collapsed");
+function handleClickCreate(ev) {
+    ev.preventDefault();
+    fieldsetCreate.classList.toggle(".collapsed-form");
     changeArrow(fieldsetCreate, span3);
 }
 
