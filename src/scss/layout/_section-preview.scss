@@ -26,7 +26,10 @@
 .preview_card{
     &-img{
         border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-        width: 100%;}
+        width: 290px;
+        height: 290px;
+        object-fit: cover;
+    }
     &-title{
         font-size: 2rem;
         font-weight: bold;
