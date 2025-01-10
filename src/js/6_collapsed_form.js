@@ -27,13 +27,13 @@ function handleClickCreateCol(){
 };
 
 // addClass function
-function AddClass(tag, clase){
-        tag.classList.toggle(clase);
+function AddClass(fieldset, clase){
+        fieldset.classList.toggle(clase);
 };
 
 // changeArrow function
-function changeArrow(tag, span){
-    const isCollapsed = tag.classList.contains('collapsed-form');
+function changeArrow(fieldset, span){
+    const isCollapsed = fieldset.classList.contains('collapsed-form');
     if(isCollapsed){
         span.innerHTML = "⪢";
     } else {
