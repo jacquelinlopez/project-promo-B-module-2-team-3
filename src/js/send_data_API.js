@@ -1,30 +1,24 @@
 'use strict';
 
 const btnCreate = document.querySelector('.js-create-btn');
-const cardData = {
-    field1: 0, //tutoria
-    field2: "",//color
-    field3: "",//nombre
-    field4: "",//reina
-    field5: "",//curiosidad
-    field6: "",//código
-    field7: "", //font
-    photo: "" //foto
-};
+
 
 function handleClickCreate() {
+    console.log(cardData);
     fetch('https://dev.adalab.es/api/info/data', {
         method: 'POST',
-        body: JSON.stringigy(cardData),
+        body: JSON.stringify(cardData),
     })
      .then((resp) => resp.json())
-     .then((cardData) => {
-        if (cardData.success) {
-            localStorage.setItem('idCard', cardData.infoID);
+     .then((cardDataAPI) => {console.log(cardDataAPI);
+        if (cardDataAPI.success) {
+            console.log('success');
+            localStorage.setItem('idCard', cardDataAPI.infoID);
         } else {
             //error debe llenar todos los campos
+            console.log('fail');
         }
-     })
+     });
 }
 
 btnCreate.addEventListener('click', handleClickCreate);
