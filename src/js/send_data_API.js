@@ -4,7 +4,6 @@ const btnCreate = document.querySelector('.js-create-btn');
 
 
 function handleClickCreate() {
-    console.log(cardData);
     fetch('https://dev.adalab.es/api/info/data', {
         method: 'POST',
         body: JSON.stringify(cardData),
@@ -13,13 +12,12 @@ function handleClickCreate() {
         }
     })
     .then((resp) => resp.json())
-    .then((cardDataAPI) => {console.log(cardDataAPI);
+    .then((cardDataAPI) => {
         if (cardDataAPI.success) {
-            console.log('success');
             localStorage.setItem('idCard', cardDataAPI.infoID);
+            //añadir enlace a la página de la tarjeta definitiva
         } else {
             //error debe llenar todos los campos
-            console.log('fail');
         }
     });
 }

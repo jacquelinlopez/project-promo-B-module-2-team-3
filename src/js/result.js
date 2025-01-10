@@ -2,8 +2,6 @@
 
 let card = {};
 
-//Petición a servidor
-
 const tutoring = document.querySelector('.js-preview-tutoring');
 const queen = document.querySelector('.js-preview-queen');
 const discover = document.querySelector('.js-preview-discover'); 
@@ -12,6 +10,16 @@ const img = document.querySelector('img');
 const h3 = document.querySelector('h3');
 const cardColor = document.querySelector('.js-card-color');
 
+//Petición a servidor
+const idLS = localStorage.getItem('idCard');
+fetch(`https://dev.adalab.es/api/info/${idLS}`)
+.then((resp)=>resp.json())
+.then((info)=>{
+    card = info.data;
+    renderData();
+});
+
+//Pintar datos en el HTML
 function selectColor(){
     if(card.field2 === 'option1') {
         cardColor.classList.add('colorOp1');
@@ -53,6 +61,6 @@ function renderData(){
     selectFont();
 };
 
-renderData();
+
 
 //crear funciones color y fuente
