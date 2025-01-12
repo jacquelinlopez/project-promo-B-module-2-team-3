@@ -1,7 +1,8 @@
 .section_preview{
     font-family: $font-main;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    padding-top: 136px;
+    padding-bottom: 136px;
+    background-color: white;
     &-card{
         display: flex;
         flex-direction: column;
