@@ -1,15 +1,7 @@
 'use strict';
 
-const card = {
-    field1: 1, //tutoria
-    field2: "option2",//color
-    field3: "Ms Adalaber",//nombre
-    field4: "del JS",//reina
-    field5: "se me da bien github",//curiosidad
-    field6: "display:flex",//código
-    field7: "option3", //font
-    photo: "https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2021/02/mujeres-programadoras.jpeg" //foto
-};
+let card = {};
+
 const tutoring = document.querySelector('.js-preview-tutoring');
 const queen = document.querySelector('.js-preview-queen');
 const discover = document.querySelector('.js-preview-discover'); 
@@ -18,6 +10,16 @@ const img = document.querySelector('img');
 const h3 = document.querySelector('h3');
 const cardColor = document.querySelector('.js-card-color');
 
+//Petición a servidor
+const idLS = localStorage.getItem('idCard');
+fetch(`https://dev.adalab.es/api/info/${idLS}`)
+.then((resp)=>resp.json())
+.then((info)=>{
+    card = info.data;
+    renderData();
+});
+
+//Pintar datos en el HTML
 function selectColor(){
     if(card.field2 === 'option1') {
         cardColor.classList.add('colorOp1');
@@ -59,6 +61,6 @@ function renderData(){
     selectFont();
 };
 
-renderData();
+
 
 //crear funciones color y fuente

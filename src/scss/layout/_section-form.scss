@@ -1,6 +1,6 @@
 .section-form {
     width: 100%;
-    padding: 3.5rem;
+    padding: 1rem 3.5rem;
     background: linear-gradient($color-complementary, $color-main);
 
     @media (min-width : 768px) {
@@ -19,12 +19,19 @@
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
+    //gap: 0.5rem;
 
     &_legend {
         text-align: center;
         font-weight: bold;
         color: white;
-        padding: 0.5rem 2rem;
+        padding: 0.8rem 2rem;
+    }
+
+    &_label {
+        font-size: 1.6rem;
+        display: block;
+        margin-top: 1rem;
     }
 
     &_option-select {
@@ -83,6 +90,8 @@
 
     }
 
+    
+
     &_reset-input {
         width: 80%;
         background-color: $color-complementary;
@@ -135,5 +144,34 @@
 
         }
 
+    }
+}
+
+.Img-upload-input {
+    display: none;
+}
+
+.Img-upload-label {
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    padding: 1.2rem 2rem;
+    margin: 0.8rem 0;
+    border-radius: 2rem;
+    border-style: none;
+    font-family: $font-main;
+    background-image: url('/images/star.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    padding-left: 4rem;
+    font-size: 1.4rem;
+    //transition: width 0.4s ease-in-out;
+
+    &:focus {
+        outline: none;
+        border: 2px solid $color-complementary;
+        //width: 100%;
     }
 }
