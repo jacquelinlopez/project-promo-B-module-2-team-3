@@ -1,11 +1,7 @@
 .section-form {
     width: 100%;
-<<<<<<< HEAD
     padding: 1rem 3.5rem;
     background: linear-gradient($color-complementary, $color-main);
-=======
-    padding: 3.5rem;
->>>>>>> issue-02
 
     @media (min-width : 768px) {
         width: 50%;
@@ -29,7 +25,6 @@
         text-align: center;
         font-weight: bold;
         color: white;
-<<<<<<< HEAD
         padding: 0.8rem 2rem;
     }
 
@@ -37,10 +32,8 @@
         font-size: 1.6rem;
         display: block;
         margin-top: 1rem;
-=======
         padding: 0.5rem 2rem;
         cursor: pointer;
->>>>>>> issue-02
     }
 
     &_option-select {
@@ -156,7 +149,6 @@
     }
 }
 
-<<<<<<< HEAD
 .Img-upload-input {
     display: none;
 }
@@ -184,12 +176,11 @@
         border: 2px solid $color-complementary;
         //width: 100%;
     }
-=======
+}
 //JS class
 .collapsed-form{
     display: none;
 }
 .arrow{
     width: 1.5rem;
->>>>>>> issue-02
 }
