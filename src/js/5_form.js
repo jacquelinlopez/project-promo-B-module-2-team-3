@@ -17,8 +17,8 @@ const previewQueen = document.querySelector('.js-preview-queen');
 const previewDiscover = document.querySelector('.js-preview-discover');
 const previewCode = document.querySelector('.js-preview-code');
 const resetButton = document.querySelector('.js-reset');
-const cardColor = document.querySelector('.js-card-color')
-const cardFont = document.querySelector('.js-card-font')
+const color = document.querySelector('.js-card-color')
+const font = document.querySelector('.js-card-font')
 
 function render(){
     previewTitle.innerHTML = cardData.field3;
@@ -40,13 +40,13 @@ form.addEventListener('input', handleForm);
 
 
 function resetColor (){
-    cardColor.classList.add('colorOp0');
-    cardColor.classList.remove('colorOp1', 'colorOp2', 'colorOp3', 'colorOp4');
+    color.classList.add('colorOp0');
+    color.classList.remove('colorOp1', 'colorOp2', 'colorOp3', 'colorOp4');
 }
 
 function resetFont (){
-    cardFont.classList.add('fontOp0');
-    cardFont.classList.remove('fontOp1', 'fontOp2', 'fontOp3');
+    font.classList.add('fontOp0');
+    font.classList.remove('fontOp1', 'fontOp2', 'fontOp3');
 }
 
 function handleClick (){
