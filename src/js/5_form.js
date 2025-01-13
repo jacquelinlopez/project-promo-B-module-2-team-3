@@ -17,11 +17,10 @@ const previewQueen = document.querySelector('.js-preview-queen');
 const previewDiscover = document.querySelector('.js-preview-discover');
 const previewCode = document.querySelector('.js-preview-code');
 const resetButton = document.querySelector('.js-reset');
-
+const cardColor = document.querySelector('.js-card-color')
+const cardFont = document.querySelector('.js-card-font')
 
 function render(){
-    //color
-    //img
     previewTitle.innerHTML = cardData.field3;
     previewTutoring.innerHTML = cardData.field1;
     previewQueen.innerHTML = cardData.field4;
@@ -39,6 +38,17 @@ function handleForm(ev){
 
 form.addEventListener('input', handleForm);
 
+
+function resetColor (){
+    cardColor.classList.add('colorOp0');
+    cardColor.classList.remove('colorOp1', 'colorOp2', 'colorOp3', 'colorOp4');
+}
+
+function resetFont (){
+    cardFont.classList.add('fontOp0');
+    cardFont.classList.remove('fontOp1', 'fontOp2', 'fontOp3');
+}
+
 function handleClick (){
     previewImg.src = `https://img.freepik.com/vector-gratis/linda-chica-hacker-operando-laptop-dibujos-animados-vector-icono-ilustracion-personas-tecnologia-aislada-plana_138676-9487.jpg`;
     previewTitle.innerHTML = ``;
@@ -46,6 +56,9 @@ function handleClick (){
     previewQueen.innerHTML = ``;
     previewDiscover.innerHTML = ``;
     previewCode.innerHTML = ``;
+    
+    resetColor();
+    resetFont();
 }
 
 resetButton.addEventListener('click', handleClick)
