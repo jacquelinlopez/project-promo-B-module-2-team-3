@@ -1,6 +1,7 @@
 'use strict';
 
 const btnCreate = document.querySelector('.js-create-btn');
+const linkResult = document.querySelector('.js-link-result');
 
 
 function handleClickCreate() {
@@ -16,6 +17,7 @@ function handleClickCreate() {
         if (cardDataAPI.success) {
             localStorage.setItem('idCard', cardDataAPI.infoID);
             //añadir enlace a la página de la tarjeta definitiva
+            linkResult.classList.remove('hidden-link');
         } else {
             //error debe llenar todos los campos
         }
