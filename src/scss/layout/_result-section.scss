@@ -31,6 +31,29 @@
 .icons-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin: 1rem;
 
+}
+
+.start-again-link {
+    width: 65%;
+        background-color: $color-secondary;
+        border: none;
+        border-radius: 2.5rem;
+        font-family: $font-main;
+        color: white;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 1.3rem 2rem;
+        margin: 1rem auto 2rem;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+
+        &:hover {
+            background-color: $color-main;
+            color: $color-secondary;
+            cursor: pointer;
+        }
 }
