@@ -1,5 +1,15 @@
 //feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3 mx-3 icon-square
 
+.result-main {
+
+    @media (min-width : 768px) {
+        display: flex;
+        align-items: center; 
+        height: 100vh;
+    }
+    
+}
+
 .icon-square {
     width: 3.5rem;
     height: 3.5rem;
@@ -20,13 +30,20 @@
     }
 }
 
-.share-title {
-    font-family: $font-main;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: $color-secondary;
-    text-align: center;
+.share {
+    @media (min-width : 768px) {
+        width: 50%;
+    }
+
+    &-title {
+        font-family: $font-main;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $color-secondary;
+        text-align: center;
+    }
 }
+
 
 .icons-container {
     display: flex;
@@ -55,5 +72,10 @@
             background-color: $color-main;
             color: $color-secondary;
             cursor: pointer;
+        }
+
+        @media (min-width : 768px) {
+            margin-top: 3rem;
+            width: 60%;
         }
 }
