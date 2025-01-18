@@ -1,0 +1,96 @@
+.section{
+    font-family: "Source Code Pro", monospace;
+    padding-top: 136px;
+    padding-bottom: 136px;
+    background-color: white;
+    &_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 
+            rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            &-img{
+                border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+                width: 290px;
+                height: 290px;
+                object-fit: cover;
+            }
+            &-title{
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 20px 0px;
+            }
+            &-container{
+                padding: 0px 20px;
+            }
+    }
+
+    @media (min-width : 768px) {
+        width: 50%;
+    }
+    @media (min-width : 1200px) {
+        width: 60%;
+    }
+}
+.card{
+    &-paragraph{
+        padding: 10px 0px;
+        font-size: 1.4rem; 
+    }
+    &-span{
+        font-weight: bold;
+    }
+}
+.code{
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    border: none;
+    padding: 5px 30px;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    margin-bottom: 15px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+//COLORS
+.colorOp1 {
+    background: linear-gradient(to bottom left, #f12711, #f5af19);
+    border: 5px solid #f16711;
+}
+/*purple HTML color*/
+.colorOp2 {
+    background: linear-gradient(to bottom left, #8B3198, #dea2fd);
+    border: 5px solid #9042cc;
+}
+/*green Sass color*/
+.colorOp3 {
+    background: linear-gradient(to bottom left, #039685, #30D8C3);
+    border: 5px solid #28a187;
+}
+/*blue CSS color*/
+.colorOp4 {
+    background: linear-gradient(to bottom left, #3f2b96, #a8c0ff);
+    border: 5px solid #5543a2;
+}
+//FONTS
+// .fontOp0{
+//     font-family: "Source Code Pro", monospace;
+// }
+// .fontOp1{
+//     font-family: "JetBrains Mono", serif;
+// }
+// .fontOp2{
+//     font-family: "Fira Code", serif;
+// }
+// .fontOp3{
+//     font-family: "Open Sans", serif;
+// }
