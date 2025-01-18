@@ -1,7 +1,7 @@
 .section_preview{
     font-family: $font-main;
-    padding-top: 136px;
-    padding-bottom: 136px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: white;
     &-card{
         display: flex;
@@ -19,6 +19,8 @@
 
     @media (min-width : 768px) {
         width: 50%;
+        padding-top: 136px;
+        padding-bottom: 136px;
     }
     @media (min-width : 1200px) {
         width: 60%;
