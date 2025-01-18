@@ -25,19 +25,26 @@ function getDataAPI (){
 
 
 function handleClickCreate() {
-    let valido = true;
+    let valid = true;
     const errorMsg = 'Debe rellenar todos los campos';
+    const allowedFormats = ['image/png', 'image/jpeg'];
+    const formatMsg = 'La imagen debe estar en formato png o jpeg.';
 
-    if(!imgInput){
-        valido = false;
-    } else{
-        const allowedFormats = ["image/png", "image/jpeg"];
-      if (!allowedFormats.includes(imgInput.type)) {
-        valido = false;
+    if(!imgInput.files || imgInput.files.length === 0){
+        //si el input no está correctamente configurado o la lista de files está vacía, es decir, no hay archivos seleccionados
+        valid = false;
+    } else {
+        if(!allowedFormats.includes(imgInput.type)){
+            alert(formatMsg);
+        }
     }
 
-
-    getDataAPI();
+    if (!valid) {
+        alert(errorMsg);
+      } else {
+        getDataAPI();
+      }
+    
 }
 
 btnCreate.addEventListener('click', handleClickCreate);
