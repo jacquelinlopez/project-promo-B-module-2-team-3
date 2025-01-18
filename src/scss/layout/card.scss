@@ -14,8 +14,8 @@
             rgba(0, 0, 0, 0.23) 0px 6px 6px;
             &-img{
                 border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
-                width: 290px;
-                height: 290px;
+                width: 250px;
+                height: 250px;
                 object-fit: cover;
             }
             &-title{
@@ -27,13 +27,6 @@
             &-container{
                 padding: 0px 20px;
             }
-    }
-
-    @media (min-width : 768px) {
-        width: 50%;
-    }
-    @media (min-width : 1200px) {
-        width: 60%;
     }
 }
 .card{

@@ -1,32 +1,52 @@
+body{
+    background: rgb(226,247,245);
+background: linear-gradient(180deg, rgba(226,247,245,1) 0%, rgba(236,245,246,1) 53%, rgba(251,234,251,1) 100%);
+}
 .aboutus{
     &_title{
         font-family: $font-main;
         font-size: 3.5rem;
-        padding: 5rem;
-        background: linear-gradient(yellow,red);
-        background-clip: text;
-        color: transparent;  
+        padding: 3.5rem 0 3rem 3rem;
+        color: #ca58db;
+        font-weight: bold;
+        text-shadow: 2px 3px 3px rgba(138, 49, 152, 0.3);
+
+        @media (min-width : 768px) {
+            padding: 3.5rem 0 3rem 8rem;
+        }
     }
     &_text{
         font-family: $font-main;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+        padding-left: 4rem;
+        width: 78%;
         &-span{
             font-weight: bold;
             color: $color-main;
+            text-shadow: 2px 3px 3px rgba(3, 150, 133, 0.3);
+        }
+
+        @media (min-width : 768px) {
+            padding-left: 7rem;
+            width: 73%;
+        }
+        @media (min-width : 1200px) {
+            width: 47%;
         }
     }
     &_card-box{
-        padding: 7rem 0rem;
+        padding: 5rem 0 10.1rem 0;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 7rem;
+        flex-direction: column;
+        gap: 5rem;
 
         @media (min-width : 768px) {
-            flex-wrap: nowrap;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
         @media (min-width : 1200px) {
-            flex-wrap: nowrap;
+            justify-content: space-around;
         }
     }
 }
