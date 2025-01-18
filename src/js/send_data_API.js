@@ -21,39 +21,48 @@ function sendDataAPI (){
     });
 }
 
-
-function handleClickCreate() {
-    let valid = true;
-    const errorMsg = 'Debe rellenar todos los campos';
-    const allowedFormats = ['image/png', 'image/jpeg'];
-    const formatMsg = 'La imagen debe estar en formato png o jpeg.';
-
-    //recoger los inputs
+function validateTextFields() {
     const nameInput = document.getElementById('field3').value.trim();
     const tutoringInput = document.getElementById('field1').value.trim();
     const queenInput = document.getElementById('field4').value.trim();
     const curiosityInput = document.getElementById('field5').value.trim();
     const codeInput = document.getElementById('field6').value.trim();
-    
-    //validarlos
+
     if(nameInput === "" || tutoringInput === "" || queenInput === "" ||curiosityInput === "" || codeInput === ""){
-        valid = false;
+        return false;
     }
 
+    return true;
+}
+
+function validateImage() {
     const imgInput = document.querySelector('.js__profile-upload-btn');
+    const allowedFormats = ['image/png', 'image/jpeg'];
     
     if(!imgInput.files || imgInput.files.length === 0){
-        valid = false;
-    } else {
-        const imgFile = imgInput.files[0];
-        if (!allowedFormats.includes(imgFile.type)){
-            valid = false;
-            alert(formatMsg); 
-        }
+        return false; //si no se ha seleccionado imagen
     }
 
+    const imgFile = imgInput.files[0];
 
-    if (!valid) {
+    if (!allowedFormats.includes(imgFile.type)){
+        //si el formato de imagen no es correcto
+        alert('La imagen debe estar en formato png o jpeg.');
+        return false; 
+    }
+    
+    return true;
+}
+
+function handleClickCreate() {
+   
+    const errorMsg = 'Debe rellenar todos los campos';
+    
+    const isTextValid = validateTextFields();
+    const isImageValid = validateImage();
+    
+
+    if (!isTextValid || !isImageValid) {
         alert(errorMsg);
       } else {
         sendDataAPI();
@@ -62,3 +71,5 @@ function handleClickCreate() {
 }
 
 btnCreate.addEventListener('click', handleClickCreate);
+
+
