@@ -1,4 +1,3 @@
-'use strict';
 
 const colorOption = document.querySelector('.js-colorOp');
 const cardColor = document.querySelector('.js-card-color');

@@ -1,10 +1,9 @@
-'use strict';
 
+const imgInput = document.querySelector('.js__profile-upload-btn')
 const btnCreate = document.querySelector('.js-create-btn');
 const linkResult = document.querySelector('.js-link-result');
 
-
-function handleClickCreate() {
+function getDataAPI (){
     fetch('https://dev.adalab.es/api/info/data', {
         method: 'POST',
         body: JSON.stringify(cardData),
@@ -22,6 +21,23 @@ function handleClickCreate() {
             //error debe llenar todos los campos
         }
     });
+}
+
+
+function handleClickCreate() {
+    let valido = true;
+    const errorMsg = 'Debe rellenar todos los campos';
+
+    if(!imgInput){
+        valido = false;
+    } else{
+        const allowedFormats = ["image/png", "image/jpeg"];
+      if (!allowedFormats.includes(imgInput.type)) {
+        valido = false;
+    }
+
+
+    getDataAPI();
 }
 
 btnCreate.addEventListener('click', handleClickCreate);
