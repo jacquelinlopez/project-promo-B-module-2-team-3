@@ -1,4 +1,32 @@
-.card-box{
-    display: flex;flex-wrap: wrap;
+.aboutus{
+    &_title{
+        font-family: $font-main;
+        font-size: 3.5rem;
+        padding: 5rem;
+        background: linear-gradient(yellow,red);
+        background-clip: text;
+        color: transparent;  
+    }
+    &_text{
+        font-family: $font-main;
+        font-size: 1.8rem;
+        &-span{
+            font-weight: bold;
+            color: $color-main;
+        }
+    }
+    &_card-box{
+        padding: 7rem 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7rem;
 
+        @media (min-width : 768px) {
+            flex-wrap: nowrap;
+        }
+        @media (min-width : 1200px) {
+            flex-wrap: nowrap;
+        }
+    }
 }

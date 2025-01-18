@@ -1,8 +1,5 @@
 .section{
-    font-family: "Source Code Pro", monospace;
-    padding-top: 136px;
-    padding-bottom: 136px;
-    background-color: white;
+    font-family: $font-main;
     &_card{
         display: flex;
         flex-direction: column;
@@ -49,7 +46,7 @@
     }
 }
 .code{
-    font-family: "Source Code Pro", monospace;
+    font-family: $font-main;
     font-size: 1.4rem;
     border-radius: 100px;
     border: none;
