@@ -54,15 +54,30 @@ function validateImage() {
     return true;
 }
 
+function validateSelects(){
+    const colorOption = document.querySelector('.js-colorOp').value;
+    const fontOption = document.querySelector('.js-fontOp').value;
+
+    console.log(colorOption);
+    console.log(fontOption);
+
+    if(colorOption === "color-default" || fontOption === "font-default"){
+        return false;
+    }
+
+    return true;
+}
+
 function handleClickCreate() {
    
     const errorMsg = 'Debe rellenar todos los campos';
     
     const isTextValid = validateTextFields();
     const isImageValid = validateImage();
+    const areOptionsValid = validateSelects();
     
 
-    if (!isTextValid || !isImageValid) {
+    if (!isTextValid || !isImageValid || !areOptionsValid) {
         alert(errorMsg);
       } else {
         sendDataAPI();
@@ -71,5 +86,3 @@ function handleClickCreate() {
 }
 
 btnCreate.addEventListener('click', handleClickCreate);
-
-
