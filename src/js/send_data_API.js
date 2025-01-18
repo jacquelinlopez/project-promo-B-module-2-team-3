@@ -10,14 +10,25 @@ function sendDataAPI (){
             'Content-type': 'application/json',
         }
     })
-    .then((resp) => resp.json())
+    .then((resp) => {
+        if (!resp.ok) {
+            throw new Error('La respuesta de la red no fue correcta');
+        }
+        return resp.json();
+    })
     .then((cardDataAPI) => {
         if (cardDataAPI.success) {
             localStorage.setItem('idCard', cardDataAPI.infoID);
             linkResult.classList.remove('hidden-link');
         } else {
-            //error la imagen es demasiado grande
+            console.log('Fail');
+            alert('La imagen es demasiado grande');
         }
+    });
+
+    .catch((error) => {
+        console.log('Error:', error);
+        alert('Hubo un problema con la solicitud. Inténtalo de nuevo.');
     });
 }
 
@@ -57,9 +68,6 @@ function validateImage() {
 function validateSelects(){
     const colorOption = document.querySelector('.js-colorOp').value;
     const fontOption = document.querySelector('.js-fontOp').value;
-
-    console.log(colorOption);
-    console.log(fontOption);
 
     if(colorOption === "color-default" || fontOption === "font-default"){
         return false;
