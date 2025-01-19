@@ -1,6 +1,6 @@
-.header {
-  background-color: $color-complementary ;
-  font-family: $font-main ;
+.header{
+  background-color: $color-complementary;
+  font-family: $font-main;
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -15,8 +15,9 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
-  @media(min-width: 1200px){
-    .logo-adalaber{
+
+@media (min-width: 1200px){
+  .logo-adalaber{
     width: 40px;
     padding-left: 5px;
     padding-top: 5px;
@@ -25,7 +26,7 @@
 }
 
 /*estilo para el menu hamburguesa*/
-.menu-hamburger {
+.menu-hamburger{
   display: flex;
   margin-top: 10px;
   margin-right: 10px;
@@ -33,30 +34,25 @@
   justify-content: flex-end;
 }
 
-
-
 .icon-hamburger{
   width: auto;
   height: 25px;
   cursor: pointer;
 }
 
-
 /*ocultar el menu completo*/
 .menu{
-  display:block;
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
-
-    
 }
 
- .collapsed{
+.collapsed{
   display: none;
 }
 
-.menu li {
+.menu li{
   display: block; 
   text-decoration: none;
   list-style: none;
@@ -68,36 +64,34 @@
 }
 
 /*pantallas*/
-
 @media (min-width: 768px){
-  .menu {
+  .menu{
     display: flex;
     list-style: none;
     justify-content: space-between;
     padding: 0;
     margin: 0;
   }
-  .menu li {
+
+  .menu li{
     display: inline;
     font-size: 20px;
     text-align: right;
     letter-spacing: 1px;
     cursor: pointer;
-}
-.menu li a{
-  text-decoration: none;
-  color: white;
-}
-.menu-hamburger {
-  display: none; 
-}
-
-.menu li a:hover {
-  text-decoration: underline;
-  color:  #8B3198;
-}
-
   }
 
- 
+  .menu li a{
+    text-decoration: none;
+    color: white;
+  }
 
+  .menu-hamburger{
+    display: none; 
+  }
+
+  .menu li a:hover{
+    text-decoration: underline;
+    color: #8B3198;
+  }
+}

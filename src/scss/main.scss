@@ -4,15 +4,21 @@
 @import 'components/button-share';
 @import 'components/button-reset';
 @import 'layout/header';
-@import 'layout/landing';
+@import 'pages/landing';
 @import 'layout/main-create';
 @import 'layout/section-form';
 @import 'layout/section-preview';
 @import 'layout/footer';
-@import 'pages/create-page'; //revisar este
-@import 'layout/color-options';
-@import 'layout/font-options';
-@import 'layout/result-section';//revisar este
-@import 'layout/aboutus'; //revisar este
+@import 'components/color-options';
+@import 'components/font-options';
+@import 'pages/result-section';//revisar este
+@import 'pages/aboutus'; //revisar este
 @import 'layout/card';
 
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
