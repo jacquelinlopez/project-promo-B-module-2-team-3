@@ -1,4 +1,3 @@
-'use strict';
 
 const fontOption = document.querySelector('.js-fontOp');
 const cardFont = document.querySelectorAll('.js-card-font');  

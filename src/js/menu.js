@@ -1,5 +1,3 @@
-'use strict';
-
 const menuToggle = document.querySelector('.js-hamburger');
 const menuList = document.querySelector('.js-menu');
 

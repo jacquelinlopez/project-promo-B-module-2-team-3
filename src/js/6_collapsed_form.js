@@ -1,4 +1,4 @@
-"use strict";
+
 //fieldsets
 const fieldsetDesign = document.querySelector(".js-fieldset-design");
 const fieldsetFill = document.querySelector(".js-fieldset-fill");
