@@ -60,11 +60,13 @@
     border-radius: 100px;
     border: none;
     padding: 5px 30px;
-    background-color: white;
-    color: #000;
+    color: white;
     text-align: center;
     margin-bottom: 15px;
     width: fit-content;
     transition: all 0.3s ease;
+    background: rgb(48,48,70);
+    background: linear-gradient(135deg, rgba(48,48,70,1) 0%, rgba(9,5,25,1) 61%);
+    box-shadow: 3px 7px 8px -5px rgba(0,0,0,0.75);
 }
 
