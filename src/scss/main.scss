@@ -16,3 +16,10 @@
 @import 'layout/aboutus'; //revisar este
 @import 'layout/card';
 
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}

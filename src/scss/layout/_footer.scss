@@ -1,4 +1,4 @@
-.footer {
+.footer{
   background-color: $color-secondary;
   color: white;
   font-family: $font-main;
@@ -8,12 +8,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  //position: sticky;//
   bottom: 0;
   left: 0;
- 
 }
- 
+
 .text-footer{
   padding-top: 15px;
   font-size: 16px;
@@ -23,26 +21,22 @@
   padding-bottom: 5px;
   margin-top: 10px;
   font-size: 14px;
-
- 
 }
-//medias querys//
 
-@media (min-width: 768px) {
- 
-  .footer {
+//medias querys//
+@media (min-width: 768px){
+  .footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 20px; 
   }
 
- 
-  .text-footer {
+  .text-footer{
     font-size: 18px; 
   }
-  .footer-copy {
+
+  .footer-copy{
     font-size: 18px;
   }
-
 }

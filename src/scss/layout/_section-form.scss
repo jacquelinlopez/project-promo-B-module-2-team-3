@@ -1,34 +1,31 @@
-.section-form {
+.section-form{
     width: 100%;
     padding: 1rem 3.5rem;
     background: linear-gradient($color-complementary, $color-main);
 
-    @media (min-width : 768px) {
+    @media (min-width : 768px){
         width: 50%;
     }
-    @media (min-width : 1200px) {
+
+    @media (min-width : 1200px){
         width: 40%;
-        
     }
-
-
 }
-.create-form {
-    
+
+.create-form{    
     font-family: $font-main;
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
-    //gap: 0.5rem;
 
-    &_legend {
+    &_legend{
         text-align: center;
         font-weight: bold;
         color: white;
         padding: 0.8rem 2rem;
     }
 
-    &_label {
+    &_label{
         font-size: 1.6rem;
         display: block;
         margin-top: 1rem;
@@ -36,7 +33,7 @@
         cursor: pointer;
     }
 
-    &_option-select {
+    &_option-select{
         width: 100%;
         padding: 1.2rem 2rem;
         border: none;
@@ -50,16 +47,13 @@
         background-size: 2rem;
         padding-left: 4rem;
 
-        &:focus {
+        &:focus{
             outline: none;
             border: 2px solid $color-complementary;
-            //width: 100%;
         }
-        
-
     }
 
-    &_input {
+    &_input{
         box-sizing: border-box;
         width: 100%;
         display: block;
@@ -74,27 +68,21 @@
         background-size: 2rem;
         padding-left: 4rem;
         color: $color-secondary;
-        //transition: width 0.4s ease-in-out;
 
-        &:focus {
+        &:focus{
             outline: none;
             border: 2px solid $color-complementary;
-            //width: 100%;
         }
     }
 
-    &_buttons {
-
+    &_buttons{
         @media (min-width : 1200px) {
             display: flex;
             justify-content: space-around;
         }
-
     }
 
-    
-
-    &_reset-input {
+    &_reset-input{
         width: 80%;
         background-color: $color-complementary;
         border: none;
@@ -108,16 +96,15 @@
         cursor: pointer;
         box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
 
-        @media (min-width : 1200px) {
+        @media (min-width : 1200px){
             font-size: 1.4rem;
             padding: 1.4rem 2rem;
             margin: 1rem 2%;
             width: 40%;
         }
-
     }
 
-    &_create-btn {
+    &_create-btn{
         width: 80%;
         background-color: $color-secondary;
         border: none;
@@ -132,28 +119,26 @@
         cursor: pointer;
         box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
 
-        @media (min-width : 1200px) {
+        @media (min-width : 1200px){
             font-size: 1.3rem;
             padding: 1.4rem 2rem;
             margin: 1rem 2%;
             width: 40%;
         }
 
-        & a {
+        & a{
             color: white;
             text-decoration: none;
             line-height: 2rem;
-
         }
-
     }
 }
 
-.Img-upload-input {
+.Img-upload-input{
     display: none;
 }
 
-.Img-upload-label {
+.Img-upload-label{
     background-color: white;
     box-sizing: border-box;
     width: 100%;
@@ -169,21 +154,22 @@
     background-size: 2rem;
     padding-left: 4rem;
     font-size: 1.4rem;
-    //transition: width 0.4s ease-in-out;
 
     &:focus {
         outline: none;
         border: 2px solid $color-complementary;
-        //width: 100%;
     }
 }
+
 //JS class
 .collapsed-form{
     display: none;
 }
+
 .arrow{
     width: 1.5rem;
 }
+
 .hidden-link{
     display: none;
 }

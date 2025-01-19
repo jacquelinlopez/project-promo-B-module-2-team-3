@@ -18,26 +18,31 @@
                 height: 250px;
                 object-fit: cover;
             }
+
             &-title{
                 font-size: 2rem;
                 font-weight: bold;
                 text-align: center;
                 padding: 20px 0px;
             }
+
             &-container{
                 padding: 0px 20px;
             }
     }
 }
+
 .card{
     &-paragraph{
         padding: 10px 0px;
         font-size: 1.4rem; 
     }
+
     &-span{
         font-weight: bold;
     }
 }
+
 .code{
     font-family: $font-main;
     font-size: 1.4rem;
@@ -51,26 +56,31 @@
     width: fit-content;
     transition: all 0.3s ease;
 }
+
 //COLORS
-.colorOp1 {
+.colorOp1{
     background: linear-gradient(to bottom left, #f12711, #f5af19);
     border: 5px solid #f16711;
 }
+
 /*purple HTML color*/
-.colorOp2 {
+.colorOp2{
     background: linear-gradient(to bottom left, #8B3198, #dea2fd);
     border: 5px solid #9042cc;
 }
+
 /*green Sass color*/
-.colorOp3 {
+.colorOp3{
     background: linear-gradient(to bottom left, #039685, #30D8C3);
     border: 5px solid #28a187;
 }
+
 /*blue CSS color*/
-.colorOp4 {
+.colorOp4{
     background: linear-gradient(to bottom left, #3f2b96, #a8c0ff);
     border: 5px solid #5543a2;
 }
+
 //FONTS
 // .fontOp0{
 //     font-family: "Source Code Pro", monospace;
