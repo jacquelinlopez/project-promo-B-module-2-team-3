@@ -17,8 +17,15 @@ const previewQueen = document.querySelector('.js-preview-queen');
 const previewDiscover = document.querySelector('.js-preview-discover');
 const previewCode = document.querySelector('.js-preview-code');
 const resetButton = document.querySelector('.js-reset');
-const color = document.querySelector('.js-card-color')
-const font = document.querySelector('.js-card-font')
+const color = document.querySelector('.js-card-color');
+const font = document.querySelector('.js-card-font');
+
+previewImg.src = `https://img.freepik.com/vector-gratis/linda-chica-hacker-operando-laptop-dibujos-animados-vector-icono-ilustracion-personas-tecnologia-aislada-plana_138676-9487.jpg`;
+previewTitle.innerHTML = `Ms.Adalaber`;
+previewTutoring.innerHTML = `1`;
+previewQueen.innerHTML = ``;
+previewDiscover.innerHTML = ``;
+previewCode.innerHTML = ``;
 
 function render(){
     previewTitle.innerHTML = cardData.field3;
