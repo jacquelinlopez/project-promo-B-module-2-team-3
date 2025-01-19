@@ -147,6 +147,16 @@
         }
 
     }
+
+    &_link {
+        padding: 40px;
+
+        &-result {
+            color: white;
+            font-weight: 600;
+            margin-left: 150px;
+        }
+    }
 }
 
 .Img-upload-input {
@@ -183,10 +193,6 @@
 }
 .arrow{
     width: 1.5rem;
-}
-
-.result-link{
-    color: white;
 }
 
 .hidden-link{
