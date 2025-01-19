@@ -10,12 +10,7 @@ function sendDataAPI (){
             'Content-type': 'application/json',
         }
     })
-    .then((resp) => {
-        if (!resp.ok) {
-            throw new Error('La respuesta de la red no fue correcta');
-        }
-        return resp.json();
-    })
+    .then((resp) => resp.json())
     .then((cardDataAPI) => {
         if (cardDataAPI.success) {
             localStorage.setItem('idCard', cardDataAPI.infoID);
@@ -24,11 +19,6 @@ function sendDataAPI (){
             console.log('Fail');
             alert('La imagen es demasiado grande');
         }
-    });
-
-    .catch((error) => {
-        console.log('Error:', error);
-        alert('Hubo un problema con la solicitud. Inténtalo de nuevo.');
     });
 }
 
