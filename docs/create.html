@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Crea tu Adalaber</title>
+    <!-- FONTS -->
+    <!-- Source Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- JetBrains Mono / Fira Code / Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- SCSS STYLE -->
+    
+    <link rel="stylesheet" href="./assets/main-b71c95de.css">
+  </head>
+
+  <body>
+    
+    <header class="header">
+  <div class="logo-titulo">
+    <img src="./images/logo.png" alt="logo" class="logo-adalaber">
+  </div>
+  <nav>
+    <div class="menu-hamburger js-hamburger">
+      <a href="#">
+      <img src="./images/menu-icon.png" alt="icon-hamburger" class="icon-hamburger" ></a>
+    </div>
+    <ul class="menu js-menu collapsed">
+        <li class="home">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="crear">
+          <a href="./create.html">Crear</a>
+        </li>
+        <li class="Nosotras">
+          <a href="./aboutus.html">Nosotras</a>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+    <main class="main-create">
+    <section class="section-form">
+    <form action="" class="create-form js-form">
+        <h3 class="create-form_legend js-design-collapse">Diseña <span class="arrow js-arrow1">⩔</span></h3>
+        <!-- design fieldset -->
+        <fieldset class="js-fieldset-design">
+            <label class="create-form_label">Imagen</label>
+            <label for="photo" class="Img-upload-label">Carga una imagen de fondo (max 50KB)</label>
+            <input type="file" class="Img-upload-input js__profile-upload-btn" id="photo">
+            <label for="color-option" class="create-form_label">Color de fondo</label>
+            <select name="color-option" id="field2" class="create-form_option-select js-colorOp">
+                <option value="color-default">Elige un color de fondo</option>
+                <option value="option1">Orange JS</option>
+                <option value="option2">Purple HTML</option>
+                <option value="option3">Green Sass</option>
+                <option value="option4">Blue CSS</option>
+            </select>
+            <label for="font-option" class="create-form_label">Font Style</label>
+            <select name="font-option" id="field7" class="create-form_option-select js-fontOp">
+                <option value="font-default">Elije un estilo de texto</option>
+                <option value="option1">JetBrains Mono</option>
+                <option value="option2">Fira Code</option>
+                <option value="option3">Open Sans</option>
+            </select>
+        </fieldset>
+        <!-- fill fieldset -->
+        <fieldset>
+        <h3 class="create-form_legend js-fill-collapse">Rellena <span class="arrow js-arrow2">⩔</span></h3>
+        <fieldset class="js-fieldset-fill">
+            <label for="name" class="create-form_label">Nombre</label>
+            <input type="text" placeholder="Ms.Adalaber" id="field3" name="name" class="create-form_input"/>
+            <label for="tutoring-session" class="create-form_label">Tutorías solicitadas</label>
+            <input type="number" placeholder="1,000,000" id="field1" name="tutoring-session" class="create-form_input" min="1"/>
+            <label for="queen-of" class="create-form_label">La reina de ...</label>
+            <input type="text" placeholder="algo que te sale muy bien" id="field4" name="queen-of" class="create-form_input"/>
+            <label for="curiosity"  class="create-form_label">Ha descubierto que ...</label>
+            <input type="text" placeholder="una curiosidad" id="field5" name="curiosity" class="create-form_input"/>
+            <label for="code" class="create-form_label">Si fuera código sería ...</label>
+            <input type="text" placeholder="una codigo que te represente" id="field6" name="code" class="create-form_input"/>
+        </fieldset>
+        <!-- create fieldset -->
+        <h3 class="create-form_legend js-create-collapse">Crea <span class="arrow js-arrow3">⩔</span></h3>
+        <fieldset class="create-form_buttons js-fieldset-create">
+            <div class="create-form_create-btn js-create-btn">
+                <a href="#">Genera tu tarjeta </a>
+            </div>
+            <input type="reset" value="Empieza de nuevo" class="create-form_reset-input js-reset"/>
+        </fieldset>
+
+        <div class="create-form_link">
+            <a class="create-form_link-result hidden-link js-link-result" href="../result.html">¡Haz click aquí para ver tu tarjeta!</a>
+        </div>
+    </form>
+</section>
+    <section class="section_preview">
+    <article class="section_preview-card js-card-color">
+        <img class="preview_card-img js-preview-img" src="https://img.freepik.com/vector-gratis/linda-chica-hacker-operando-laptop-dibujos-animados-vector-icono-ilustracion-personas-tecnologia-aislada-plana_138676-9487.jpg" alt="dibujo mujer con ordenador"> <!-- temporal img -->
+        <h3 class="preview_card-title">&lt;<span class="js-preview-title js-card-font">Ms.Adalaber</span>&gt;</h3><!--temporal name-->
+        <div class="preview_paragraph-container">
+            <p class="preview_card-tutoring preview_card-paragraph">Tutorías solicitadas <span class="js-preview-tutoring js-card-font"></span></p>
+            <p class="preview_card-queen preview_card-paragraph">La reina de... <span class="js-preview-queen js-card-font"></span></p>
+            <p class="preview_card-discover preview_card-paragraph">Ha descubierto que... <span class="js-preview-discover js-card-font"></span></p>
+            <p class="preview_card-code preview_card-paragraph">Si fuera código sería...</p>
+        </div>
+        <button class="card_code js-preview-code cursor js-card-font">CODE</button>
+    </article>
+</section>
+</main>
+    <footer class="footer">
+    <div class="text-footer">
+        <p>We ♥ coding</p>
+    </div>
+    <div class="footer-copy">
+        <p>&copy; 2024</p>
+    </div>
+</footer>
+
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>

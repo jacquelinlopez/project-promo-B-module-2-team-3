@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Crea tu Adalaber</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">  
+    <!-- JetBrains Mono / Fira Code / Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
+    <link rel="stylesheet" href="./assets/main-b71c95de.css">
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
+
+    <header class="header">
+  <div class="logo-titulo">
+    <img src="./images/logo.png" alt="logo" class="logo-adalaber">
+  </div>
+  <nav>
+    <div class="menu-hamburger js-hamburger">
+      <a href="#">
+      <img src="./images/menu-icon.png" alt="icon-hamburger" class="icon-hamburger" ></a>
+    </div>
+    <ul class="menu js-menu collapsed">
+        <li class="home">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="crear">
+          <a href="./create.html">Crear</a>
+        </li>
+        <li class="Nosotras">
+          <a href="./aboutus.html">Nosotras</a>
+        </li>
+    </ul>
+  </nav>
 </header>
 
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <main class="landing">
+  <div class="landing_title">
+    <h1>¿Qué Adalaber eres hoy?</h1>
+    <h2>Crea y comparte tu tarjeta de personaje Adalaber con <span class="nameapp-span">&lt;daily.dev&gt;</span></h2>
+  </div>
+  <section class="landing_desc">
+    <article class="landing_desc-circle">
+    <img src="./images/CircleMobile.png" alt="Círculo con tres iconos y las palabras diseña rellena y comparte">
+    <p class="circleTitle">{=$circleTitle}</p>
+</article>
 
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
+    <article class="articleDisplay">
+    <img src="./images/Diseña.png" alt="Círculo con un icono de una cabeza de perfil y una bombilla en su parte trasera">
+    <p class="circleTitle">Diseña</p>
+</article>
 
-    </li>
-  </ul>
+    <article class="articleDisplay">
+    <img src="./images/Rellena.png" alt="Círculo con un icono de una hoja con líneas y un lápiz">
+    <p class="circleTitle">Rellena</p>
+</article>
+ 
+    <article class="articleDisplay">
+    <img src="./images/Comparte.png" alt="Círculo con un icono de dos bocadillos rellenos de líneas imitando una conversación">
+    <p class="circleTitle">Comparte</p>
+</article>
+ 
+  </section>
+  <div class="landing_button">
+    <a href="./create.html">¡Empieza aquí!</a>
+  </div>
 </main>
 
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
 
-  </small>
+
+    <footer class="footer">
+    <div class="text-footer">
+        <p>We ♥ coding</p>
+    </div>
+    <div class="footer-copy">
+        <p>&copy; 2024</p>
+    </div>
 </footer>
 
-    </div>
-    <script src="./js/main.js"></script>
+    
+    <script src="./js/menu.js"></script>
   </body>
 </html>
