@@ -67,20 +67,16 @@ function validateSelects(){
 }
 
 function handleClickCreate() {
-   
     const errorMsg = 'Debe rellenar todos los campos';
-    
     const isTextValid = validateTextFields();
     const isImageValid = validateImage();
     const areOptionsValid = validateSelects();
-    
 
     if (!isTextValid || !isImageValid || !areOptionsValid) {
         alert(errorMsg);
-      } else {
+    } else {
         sendDataAPI();
-      }
-    
+    }
 }
 
 btnCreate.addEventListener('click', handleClickCreate);

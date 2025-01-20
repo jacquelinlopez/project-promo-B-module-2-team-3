@@ -25,7 +25,7 @@ previewTitle.innerHTML = `Ms.Adalaber`;
 previewTutoring.innerHTML = `1`;
 previewQueen.innerHTML = ``;
 previewDiscover.innerHTML = ``;
-previewCode.innerHTML = ``;
+previewCode.innerHTML = `CODE`;
 
 function render(){
     previewTitle.innerHTML = cardData.field3;
@@ -58,14 +58,25 @@ function resetFont (){
 
 function handleClick (){
     previewImg.src = `https://img.freepik.com/vector-gratis/linda-chica-hacker-operando-laptop-dibujos-animados-vector-icono-ilustracion-personas-tecnologia-aislada-plana_138676-9487.jpg`;
-    previewTitle.innerHTML = ``;
-    previewTutoring.innerHTML = ``;
-    previewQueen.innerHTML = ``;
-    previewDiscover.innerHTML = ``;
-    previewCode.innerHTML = ``;
+
+    //Vaciamos campos
+    previewTitle.innerHTML = 'Ms. Adalaber';
+    previewTutoring.innerHTML = '';
+    previewQueen.innerHTML = '';
+    previewDiscover.innerHTML = '';
+    previewCode.innerHTML = '';
+
+    //Vaciamos datos guardados
+    cardData.field1 = '';
+    cardData.field3 = '';
+    cardData.field4 = '';
+    cardData.field5 = '';
+    cardData.field6 = '';
+
     
     resetColor();
     resetFont();
-}
+    
+};
 
-resetButton.addEventListener('click', handleClick)
+resetButton.addEventListener('click', handleClick);
