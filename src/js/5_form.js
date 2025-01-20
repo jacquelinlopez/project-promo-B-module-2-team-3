@@ -60,7 +60,7 @@ function handleClick (){
     previewImg.src = `https://img.freepik.com/vector-gratis/linda-chica-hacker-operando-laptop-dibujos-animados-vector-icono-ilustracion-personas-tecnologia-aislada-plana_138676-9487.jpg`;
 
     //Vaciamos campos
-    previewTitle.innerHTML = '';
+    previewTitle.innerHTML = 'Ms. Adalaber';
     previewTutoring.innerHTML = '';
     previewQueen.innerHTML = '';
     previewDiscover.innerHTML = '';
