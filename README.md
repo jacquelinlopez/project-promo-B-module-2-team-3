@@ -88,11 +88,11 @@ El diseño parte de una reinterpretación de la página de Adalab incluido el lo
 ### Sprints
 Para la realización de este proyecto se ha trabajado en 2 sprints de 7 sesiones cada uno. Siguiendo los principios ágiles se establecieron pequeños ciclos iterativos de forma que al final de cada uno se generó valor perceptible para nuestros usuarios (los visitantes de la web). El primer día se dedicó a la planificación del sprint (sprint planning) y el resto a trabajar en el desarrollo del proyecto. Se creó el tablero del proyecto y se definieron las tareas principales y los working agreements. Al final de cada sprint se hizo una demo del proyecto para presentar los resultados conseguidos, y una retrospectiva (retro) para evaluar el trabajo en equipo y mejorar en el siguiente sprint.
 
-**Primer sprint:** 
+**Primer y segundo sprint:** 
 - Demo corta de 5 minutos para presentar el resultado del trabajo al resto de las compañeras y a las profesoras. 
 - Retro corta revisando los working agreements acordados al inicio del proyecto.
 
-**Final del segundo sprint (final del proyecto):**
+**Final del tercer sprint (final del proyecto):**
 - Demo de 5 minutos más preguntas.
 - Retrospectiva usando Scrum.
 
