@@ -17,6 +17,15 @@ fetch(`https://dev.adalab.es/api/info/${idLS}`)
 .then((info)=>{
     card = info.data;
     renderData();
+    const socialMediaLink = encodeURI(window.location.href);
+    const socialMediaMsg = encodeURI('Mira mi tarjeta Adalaber');
+    const socialMediaTitle = encodeURIComponent('Ms. Adalaber');
+    
+    const fb = document.querySelector('.facebook');
+    fb.href = `https://www.facebook.com/share.php?u=${socialMediaLink}`;
+    
+    const twitter = document.querySelector('.twitter');
+    twitter.href = `http://twitter.com/share?&url=${socialMediaLink}&text=${socialMediaMsg}&hashtags=adalab`;
 });
 
 //Pintar datos en el HTML
