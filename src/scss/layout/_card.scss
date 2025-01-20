@@ -14,9 +14,18 @@
             rgba(0, 0, 0, 0.23) 0px 6px 6px;
             &-img{
                 border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
-                width: 250px;
-                height: 250px;
+                width: 290px;
+                height: 290px;
                 object-fit: cover;
+                background-color: #ebeaea;
+                
+                @media (min-width : 768px){
+                    border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+                    width: 290px;
+                    height: 290px;
+                    background-color: #ebeaea;
+                    object-fit: cover;
+                }
             }
 
             &-title{
@@ -81,16 +90,3 @@
     border: 5px solid #5543a2;
 }
 
-//FONTS
-// .fontOp0{
-//     font-family: "Source Code Pro", monospace;
-// }
-// .fontOp1{
-//     font-family: "JetBrains Mono", serif;
-// }
-// .fontOp2{
-//     font-family: "Fira Code", serif;
-// }
-// .fontOp3{
-//     font-family: "Open Sans", serif;
-// }

@@ -135,12 +135,16 @@
     }
 
     &_link {
-        padding: 40px;
+        padding: 40px 0px;
+        display: flex;
+        justify-content: center;
 
         &-result {
             color: white;
             font-weight: 600;
-            margin-left: 150px;
+            text-decoration: none;
+            text-align: center;
+            text-shadow: 2px 3px 3px rgb(17 6 18 / 46%);
         }
     }
 }

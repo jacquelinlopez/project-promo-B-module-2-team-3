@@ -4,6 +4,9 @@ article img{
 
     @media (min-width:768px){
         width: 180px;
+        border-radius: 100%;
+        box-shadow: 10px 10px 22px -10px rgba(0,0,0,0.75);
+        background-color:  #8B3198;
     }
 }
 
@@ -15,7 +18,6 @@ article img{
         display: block;
     }
 }
-      
 
 .circleTitle{
     display: none;

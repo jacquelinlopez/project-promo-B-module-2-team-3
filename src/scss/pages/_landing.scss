@@ -40,6 +40,7 @@
       font-size: 30px;
       line-height: 40px;
       text-align: center;
+      text-shadow: 2px 3px 0px rgb(3 150 133);
 
       @media (min-width:768px){
         font-size: 40px;
@@ -71,6 +72,8 @@
 
   &_button{
     margin-top: 3rem;
+    
+    
 
     @media (min-width:1200px){
       margin-top: 6rem;
@@ -88,6 +91,7 @@
       border-radius: 3px;
       padding: 15px 25px;
       background-color: $color-complementary;
+      box-shadow: 10px 10px 22px -10px rgba(0,0,0,0.75);
 
       &:hover{
         border: 5px solid rgba(white, $alpha: 1);
@@ -102,5 +106,9 @@
   color: white;
   text-shadow: 2px 3px 0px rgb(3 150 133);
   font-family: "JetBrains Mono", serif;
-  font-size: 2.3rem;
+  font-size: 2rem;
+
+  @media (min-width:768px){
+    font-size: 2.3rem;
+  }
 }
