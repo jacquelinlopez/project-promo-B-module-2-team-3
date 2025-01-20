@@ -1,7 +1,24 @@
-//feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3 mx-3 icon-square
+// feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3 mx-3 icon-square
+
+html, .result-body{
+    height: 100%;
+}
+
+.result-body{
+    display: flex;
+    flex-direction: column;
+}
+
 .result-main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: rgb(226,247,245);
+    background: linear-gradient(180deg, rgba(226,247,245,1) 0%, rgba(236,245,246,1) 53%, rgba(251,234,251,1) 100%);
+
     @media (min-width : 768px){
         display: flex;
+        flex-direction: row;
         align-items: center; 
         height: 100vh;
     }

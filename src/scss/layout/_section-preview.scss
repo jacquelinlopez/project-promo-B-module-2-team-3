@@ -1,8 +1,11 @@
 .section_preview{
+    height: 100%;
+    display: flex;
+    justify-content: center;
     font-family: $font-main;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: white;
+    // background-color: white;
 
     &-card{
         display: flex;
@@ -20,8 +23,6 @@
 
     @media (min-width : 768px){
         width: 50%;
-        padding-top: 136px;
-        padding-bottom: 136px;
     }
 
     @media (min-width : 1200px){
